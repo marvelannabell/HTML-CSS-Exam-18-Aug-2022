@@ -1,11 +1,11 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');:root {
     --clr-button: #ae3c33;
     --clr-gray-text: #a4aeb6;
     --clr-gray-title: #353739;
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: "Mulish", sans-serif;
     color: var(--clr-gray-text);
 }
 
