@@ -1,0 +1,137 @@
+:root {
+    --clr-button: #ae3c33;
+    --clr-gray-text: #a4aeb6;
+    --clr-gray-title: #353739;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: var(--clr-gray-text);
+}
+
+.bg-img {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-bg {
+
+    border-radius: 40px;
+    width: 45%;
+    height: 60%;
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    transform: translate(-45%, -47%);
+    overflow: hidden;
+}
+
+.form-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register-page {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+
+}
+
+#register-page {
+    width: 50%;
+    height: 100%;
+}
+
+#register {
+    position: relative;
+    margin: 40px 0px 0px 20px;
+    width: 80%;
+    height: 50vh;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 14% 14% 14% 14% 5%;
+
+    grid-template-areas:
+        "h1 h1"
+        "a b"
+        "c c"
+        "d d"
+        "e e"
+        "f f"
+        "g g";
+}
+
+#register label {
+    margin-bottom: 0.5rem;
+}
+
+#register input {
+    border: 1px solid var(--clr-gray-text);
+    border-radius: 40px;
+    height: 100%;
+}
+
+#register .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#register .title {
+    color: var(--clr-gray-title);
+    text-align: center;
+    grid-area: h1;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#register .first-name {
+    grid-area: a;
+}
+
+#register .last-name {
+
+    grid-area: b;
+}
+
+#register .email {
+    grid-area: c;
+}
+
+#register .register-password {
+    grid-area: d;
+}
+
+#register .repeat-password {
+    grid-area: e;
+}
+
+#register .accept-terms {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-area: f;
+}
+
+#register .accept-terms label {
+    padding-left: 10px;
+}
+
+#register .btn {
+    width: 50%;
+    height: 4.5vh;
+    border: none;
+    position: absolute;
+    left: 5vw;
+    bottom: 2vh;
+    background-color: var(--clr-button);
+    color: white;
+}
