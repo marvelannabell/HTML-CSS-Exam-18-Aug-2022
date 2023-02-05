@@ -1,0 +1,107 @@
+@media screen and (max-width: 600px) {
+
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-title {
+        padding: 0;
+    }
+
+    .header-title h1 {
+        font-size: 32px;
+    }
+
+    .header-title p {
+        font-size: 16px;
+    }
+
+    .header-title button {
+        color: rgb(104, 102, 102);
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 1em;
+    }
+
+    .team-description ul {
+        padding: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "a b"
+            "c d";
+
+    }
+
+    .team-description ul:nth-child(1) {
+        grid-area: a;
+    }
+
+    .team-description ul:nth-child(2) {
+        grid-area: b;
+    }
+
+    .team-description ul:nth-child(3) {
+        grid-area: c;
+    }
+
+    .team-description ul:nth-child(4) {
+
+        grid-area: d;
+    }
+
+    .team-description ul li img {
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .choose-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-news ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .choose-us ul {
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .blog-news ul{
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+  
+.blog-news ul .item {
+    width:80%;
+    list-style: none outside;
+    display: flex;
+   
+    justify-content: center;
+   
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+}
